@@ -20,7 +20,7 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
-Auth::routes(['register' => false]);
+Auth::routes(['register' => true]);
 
 Route::get('logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('logout');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
