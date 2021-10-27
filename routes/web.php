@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers;
+use App\Http\Controllers\Admin;
 // use App\Http\Controllers\Auth;
 
 /*
@@ -29,3 +30,6 @@ Route::get('/dashboard', [App\Http\Controllers\Admin\DashboardController::class,
 Route::get('/forecastError', [App\Http\Controllers\Admin\ForecastErrorController::class, 'index'])->name('forecast');
 Route::get('/trendPlot', [App\Http\Controllers\Admin\TrendPlotController::class, 'index'])->name('trendPlot');
 Route::get('/trendAnalysis', [App\Http\Controllers\Admin\TrendAnalysisController::class, 'index'])->name('trendAnalysis');
+
+// data grafik
+Route::get('dataSimple', [Admin\TrendPlotController::class, 'dataSimple']);

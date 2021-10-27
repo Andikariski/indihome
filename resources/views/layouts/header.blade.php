@@ -10,6 +10,13 @@
     <script src="{{ url('Backend/assets/js/init-alpine.js')}}"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" defer ></script>
+
+    {{-- Chart Js --}}
     <script src="{{ url('Backend/assets/js/charts-lines.js')}}" defer></script>
     <script src="{{ url('Backend/assets/js/charts-pie.js')}}" defer></script>
+
+    <script src="{{ url('Backend/assets/js/charts-simple.js')}}" defer></script>
+    <script src="{{ url('Backend/assets/js/charts-multiple.js')}}" defer></script>
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
   </head>
