@@ -31,5 +31,15 @@ Route::get('/forecastError', [App\Http\Controllers\Admin\ForecastErrorController
 Route::get('/trendPlot', [App\Http\Controllers\Admin\TrendPlotController::class, 'index'])->name('trendPlot');
 Route::get('/trendAnalysis', [App\Http\Controllers\Admin\TrendAnalysisController::class, 'index'])->name('trendAnalysis');
 
-// data grafik
-Route::get('dataSimple', [Admin\TrendPlotController::class, 'dataSimple']);
+// detail Trend Plot
+Route::get('detailSimple', [App\Http\Controllers\Admin\TrendPlotController::class, 'detailTrendPlotSimple'])->name('dataSimple');
+Route::get('detailMultiple', [App\Http\Controllers\Admin\TrendPlotController::class, 'detailTrendPlotMultiple'])->name('dataMultiple');
+
+Route::post('tambahDataPelanggan', [App\Http\Controllers\Admin\TrendPlotController::class, 'tambahDataPelanggan'])->name('addDataPelanggan');
+Route::get('hapusDataPelanggan{id}', [App\Http\Controllers\Admin\TrendPlotController::class, 'hapusDataPelanggan'])->name('hapusDataPelanggan');
+
+// data grafik Json
+Route::get('ApiDataSimple', [Admin\TrendPlotController::class, 'dataSimpleApi']);
+
+// Route Test
+Route::get('testApiData', [Admin\TrendPlotController::class, 'testApiData']);

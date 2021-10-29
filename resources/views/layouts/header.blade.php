@@ -11,12 +11,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" defer ></script>
 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
     {{-- Chart Js --}}
     <script src="{{ url('Backend/assets/js/charts-lines.js')}}" defer></script>
     <script src="{{ url('Backend/assets/js/charts-pie.js')}}" defer></script>
 
     <script src="{{ url('Backend/assets/js/charts-simple.js')}}" defer></script>
     <script src="{{ url('Backend/assets/js/charts-multiple.js')}}" defer></script>
+
+    {{-- Sweetalert --}}
+    <script src="{{ url('Backend/assets/js/sweetalert/sweet.js')}}" defer></script>
+    <script src="{{ url('Backend/assets/js/sweetalert/sweetalert2.min.js')}}" defer></script>
+    <script src="{{ url('Backend/assets/js/sweetalert/sweetalert2.all.min.js')}}" defer></script>
 
     <script src="https://code.highcharts.com/highcharts.js"></script>
   </head>

@@ -1,47 +1,28 @@
 /**
- * For usage, visit Chart.js docs https://www.chartjs.org/docs/latest/
- */
+* For usage, visit Chart.js docs https://www.chartjs.org/docs/latest/
+*/
 
-const dataSimple = fetch(`dataSimple`)
-  .then(function(resp){
-    return resp.json(); })
-  .then(function(data){
-    return data;
-})
+fetch(`ApiDataSimple`).then(function(resp){
+  return resp.json(); }).then(function(data){
 
-
-const printData =  ()=>{
-    dataSimple.then((a)=>{
-      console.log(a)
-      return a;
-    })
-    // return tempData;
-}
-
-// printData();
-// console.log(printData());
-// printData();
-// console.log(typeof(printData()));
-
-
-const lineConfigsi = {
+  const lineConfigsi = {
     type: 'line',
     data: {
       labels: ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli','Agustus','September','Oktober','November','Desember'],
       datasets: [
         {
-          label: 'Organic',
+          label: '',
           /**
            * These colors come from Tailwind CSS palette
            * https://tailwindcss.com/docs/customizing-colors/#default-color-palette
            */
           backgroundColor: '#0694a2',
           borderColor: '#0694a2',
-          data: printData(),
+          data: data[0],
           fill: false,
         },
         {
-          label: 'Paid',
+          label: '',
           fill: false,
           /**
            * These colors come from Tailwind CSS palette
@@ -49,7 +30,7 @@ const lineConfigsi = {
            */
           backgroundColor: '#7e3af2',
           borderColor: '#7e3af2',
-          data:[112,110],
+          data:data[1],
         },
       ],
     },
@@ -88,8 +69,7 @@ const lineConfigsi = {
       },
     },
   }
-  
   // change this to the id of your chart element in HMTL
   const lineCtxsi = document.getElementById('simple')
   window.myLine = new Chart(lineCtxsi, lineConfigsi)
-  
+  })
