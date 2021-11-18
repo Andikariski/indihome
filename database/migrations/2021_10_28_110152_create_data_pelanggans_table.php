@@ -15,7 +15,7 @@ class CreateDataPelanggansTable extends Migration
     {
         Schema::create('data_pelanggan', function (Blueprint $table) {
             $table->id();
-            $table->string('tahun');
+            $table->bigInteger('tahun');
             $table->bigInteger('januari');
             $table->bigInteger('februari');
             $table->bigInteger('maret');

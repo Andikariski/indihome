@@ -41,5 +41,7 @@ Route::get('hapusDataPelanggan{id}', [App\Http\Controllers\Admin\TrendPlotContro
 // data grafik Json
 Route::get('ApiDataSimple', [Admin\TrendPlotController::class, 'dataSimpleApi']);
 
+Route::get('dataSimpleApibyTahun', [Admin\TrendPlotController::class, 'dataSimpleApibyTahun']);
+
 // Route Test
 Route::get('testApiData', [Admin\TrendPlotController::class, 'testApiData']);

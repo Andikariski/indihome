@@ -19,6 +19,7 @@
 
     <script src="{{ url('Backend/assets/js/charts-simple.js')}}" defer></script>
     <script src="{{ url('Backend/assets/js/charts-multiple.js')}}" defer></script>
+    {{-- <script src="{{ url('Backend/assets/js/chart-Detail-Simple.js')}}" defer></script> --}}
 
     {{-- Sweetalert --}}
     <script src="{{ url('Backend/assets/js/sweetalert/sweet.js')}}" defer></script>

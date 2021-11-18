@@ -20,18 +20,18 @@ $(".tombolhapus").on("click", function(e) {
 });
 
 // Script Loading penjadwalan 
-const showLoading = function() {
-    Swal.fire({
-    title: 'Mohon Tunggu Sebentar',
-    allowEscapeKey: false,
-    allowOutsideClick: false,
-    timer: false,
-    onOpen: () => {
-        Swal.showLoading();
-        },
-    text: "Sistem sedang menyimpan data..!",
-    })
-  };
+// const showLoading = function() {
+//     Swal.fire({
+//     title: 'Mohon Tunggu Sebentar',
+//     allowEscapeKey: false,
+//     allowOutsideClick: false,
+//     timer: false,
+//     onOpen: () => {
+//         Swal.showLoading();
+//         },
+//     text: "Sistem sedang menyimpan data..!",
+//     })
+//   };
 
 //   document.getElementById("fire")
 //     .addEventListener('click', (event) => {
